@@ -1,3 +1,7 @@
+// sdns database functions.
+// sdns only uses the database on startup to load existing records.
+// No db queries are made during normal operation.
+
 /*
 grant all on sdns.* to 'sdns'@'%' identified by 'my-password';
 

@@ -1,3 +1,6 @@
+// sdns web api.
+// This is used to receive commands from sdnsweb.
+
 package main
 
 import (
@@ -12,7 +15,6 @@ func HTTPRootHandler(w http.ResponseWriter, r *http.Request) {
 }
 
 func HTTPSetHostHandler(w http.ResponseWriter, r *http.Request) {
-	fmt.Println("SEEEEEEEEEET")
 	vars := mux.Vars(r)
 	if vars["key"] != config.httpApiKey {
 		fmt.Fprintf(w, "error: no")

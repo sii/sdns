@@ -1,3 +1,7 @@
+// Dynamic DNS server implementation.
+// sdns is a relatively simple dynamic dns server.
+// sdns is meant to be used together with the sdnweb web frontend.
+
 package main
 
 import (
